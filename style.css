@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    transition: 1s;
+    cursor: default;
+
+    user-select: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+    background-color: whitesmoke;
+    height: 100vh;
+    
+    margin: 0px;
+}
+
+header, h1 {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* x */
+    align-items: center; /* y */
+
+    background-color: green;
+    color: white;
+    height: 5%;
+    
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section > h3 {
+    display: flex;
+    align-items: center;
+
+    color: black;
+    height: 5%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    /* background-color: hsl(220, 100%, 50%); */
+
+    height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 0px;
+
+    margin-bottom: 15px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    border-radius: 5px;
+}
+
+nav > a {
+    font-size: 1.5em;
+
+    background-color: green;
+    min-width: 150px;
+    width: 50%;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px lightgreen;
+    box-shadow: 0px 0px 10px hsla(140, 100%, 0%, 0.1);
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightblue;
+    border-radius: 5px;
+    
+    padding: 10px;
+
+    outline: none;
+
+    margin: 10px;
+
+    cursor: pointer;
+}
+
+/* sobre links */
+
+a:link /* cor para links nao visitados */ {
+    color: white;
+}
+
+a:visited /* link visitado anteriormente */ {
+    color: white;
+}
+
+a:hover /* cursor sobre o link */ {
+    text-shadow: 0px 0px 0px transparent;
+    box-shadow: inset 0px 0px 10px hsla(0, 0%, 100%, 0.5);
+    
+    border-color: white;
+
+    scale: 1.1;
+}
+
+a:active /* enquanto clicado no link */ {
+    color: blue;
+}
+
+/* margin-left em textos */
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-left: 10px;
+}
+
+/* margin-left em textos */
