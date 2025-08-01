@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!sobreButtonTermos) {
             // alterando textos
             buttonTermos1.innerHTML = 'Rod';
-            buttonTermos1.style.transform = 'scale(3) rotate(-135deg)';
+            buttonTermos1.style.transform = 'scale(3) rotate(-1.5deg)';
             buttonTermos2.innerHTML = 'Sim';
             // invertendo 'sobreButtonTermos'
             sobreButtonTermos = true;
