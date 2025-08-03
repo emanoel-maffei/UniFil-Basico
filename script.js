@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // captura do botao 
     const webSite001 = document.getElementById('web-site-001');
     let clicado = false;
+    let buttonClicado = null;
     
     // capturando div-aviso
     const divTermos = document.getElementById('div-termos');
@@ -14,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     webSite001.addEventListener('click', () => {
         if (!clicado) {
+            // definindo botao clicado
+            buttonClicado = webSite001;
+            console.log('Botão Clicado:');
+            console.log(buttonClicado);
             // borrar tela
             borrar.style.visibility = 'visible';
             borrar.style.opacity = '0.85';
@@ -29,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     borrar.addEventListener('click', () => {
         if (clicado) {
+            buttonClicado = null;
+            console.log('Botão Clicado:');
+            console.log(buttonClicado);
             // borrar tela
             borrar.style.opacity = '0';
             borrar.style.visibility = 'hidden';
@@ -52,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!sobreButtonTermos) {
             // alterando textos
             buttonTermos1.innerHTML = 'Rod';
-            buttonTermos1.style.transform = 'scale(3) rotate(-1.5deg)';
+            buttonTermos1.style.transform = 'scale(3) rotate(-5deg)';
             buttonTermos2.innerHTML = 'Sim';
             // invertendo 'sobreButtonTermos'
             sobreButtonTermos = true;
@@ -73,12 +81,17 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonTermos1.addEventListener('mouseout', AlternarButtonTermos);
     buttonTermos2.addEventListener('mouseout', AlternarButtonTermos);
 
+    let anguloBody = 0;
     function ClicouButtonTermos(button) {
         if (button == buttonTermos1) {
-            // caso clique em 'nao'
+            // caso clique em nao ('sim')
             borrar.click();
-            document.body.style.transform = 'rotate(-135deg)';
+            anguloBody -= 135;
+            document.body.style.transform = `rotate(${anguloBody}deg)`;
             document.body.style.scale = '0.5';
+        } else if (button == buttonTermos2) {
+            // caso clique em sim ('nao')
+            location.href = 'Web-sites/combinacao-perfeita.html';
         }
     }
 
@@ -87,6 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ClicouButtonTermos(buttonTermos1);
     });
     buttonTermos2.addEventListener('click', () => {
-
+        ClicouButtonTermos(buttonTermos2);
     });
 })

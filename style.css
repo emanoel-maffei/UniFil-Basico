@@ -17,6 +17,8 @@ body {
     height: 100vh;
     
     margin: 0px;
+
+    transition: transform 500ms;
 }
 
 header, h1 {
@@ -140,14 +142,23 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #borrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     
     background-color: black;
+    color: rgba(255, 255, 255, 0.5);
     width: 100vw;
     height: 100vh;
+
+    padding-bottom: 25%;
 
     visibility: hidden;
     opacity: 0;

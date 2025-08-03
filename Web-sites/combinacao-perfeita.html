@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinação Perfeita</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 5px pink;
+
+            padding: 0px;
+
+            margin: 0px;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 7fr;
+
+            /* background-color: red; */
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+
+            /* background-color: lightsalmon; */
+        }
+        
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+
+            /* background-color: lightblue; */
+            height: 100%;
+        }
+
+        img {
+            background-color: white;
+            width: 100%;
+            box-shadow: 0px 0px 10px white;
+            transition-timing-function: ease;
+
+            border-radius: 50px;
+
+            transition: 500ms;
+            cursor: pointer;
+        }
+
+        /* img:hover {
+            padding: 10px;
+        } */
+
+        /* ao ficar precionando o elemento */
+        /* img:nth-child(1):active {
+            transform: rotate(10deg);
+        } */
+
+        img:nth-child(2):active {
+            border-radius: 25px;
+        }
+
+        /* ao usar o tab para navegar na pagina */
+        /* img:focus {
+            opacity: 0;
+        } */
+        /* nao funciona pois nao é possivel ficar com o tab sobre uma imagem normalmente */
+
+        @media (max-width: 756px) {
+            h1 {
+                letter-spacing: 0px;
+            }
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Combinação Perfeita:</h1>
+    </header>
+
+    <main>
+        <img id="img-1" src="https://savegnagoio.vtexassets.com/arquivos/ids/368598/CerealMatinalKelloggsSucrilhosCho1.jpg?v=638081036040930000" alt="Imagem de Cereal Matinal Kellogg's">
+        
+        <img src="https://www.extramercado.com.br/img/uploads/1/638/33150638.png" alt="Imagem de Iogurte Morango Nestle">
+    </main>
+
+    <script>
+
+        const img1 = document.getElementById('img-1');
+        let img1Clicado = false;
+
+        img1.addEventListener('click', () => {
+            if (!img1Clicado) {
+                img1.style.transform = 'rotate(90deg)';
+                img1Clicado = true;
+            } else {
+                img1.style.transform = 'rotate(0deg)';
+                img1Clicado = false;
+            }
+        });
+
+        img1.addEventListener('mousedown', () => {
+            if (!img1Clicado) {
+                img1.style.transform = 'rotate(10deg)';
+            } else {
+                img1.style.transform = 'rotate(80deg)';
+            }
+        });
+
+        img1.addEventListener('mouseup', () => {
+            if (!img1Clicado) {
+                img1.style.transform = 'rotate(0deg)';
+            } else {
+                img1.style.transform = 'rotate(90deg)';
+            }
+        });
+
+    </script>
+        
+</body>
+</html>
