@@ -1,3 +1,5 @@
+alert("Redimencione a janela para vizualisar a renponsividade.")
+
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
         // definindo propriedades
@@ -53,4 +55,5 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list",
     ".nav-list li"
 );
+
 mobileNavbar.init();
