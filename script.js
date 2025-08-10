@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // captura do botao 
     const webSite001 = document.getElementById('web-site-001');
+    const webSite002 = document.getElementById('web-site-002');
     let clicado = false;
     let buttonClicado = null;
     
@@ -13,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // captrando borrar
     const borrar = document.getElementById('borrar');
 
-    webSite001.addEventListener('click', () => {
+    function SomeButtonClicked(button) {
         if (!clicado) {
             // definindo botao clicado
-            buttonClicado = webSite001;
+            buttonClicado = button;
             console.log('Botão Clicado:');
             console.log(buttonClicado);
             // borrar tela
@@ -26,10 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
             divTermos.style.visibility = 'visible';
             divTermos.style.opacity = '1';
             divTermos.style.top = '10%';
+            if (buttonClicado == 2) {
+                divTermos.style.transform = "translate(-50%, -10%) rotate(180deg)"
+            }
 
             // inversao de 'clicado'
             clicado = true;
         }
+    }
+
+    webSite001.addEventListener('click', () => {
+        SomeButtonClicked(1)
+    });
+    webSite002.addEventListener('click', () => {
+        SomeButtonClicked(2)
     });
 
     borrar.addEventListener('click', () => {
@@ -44,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             divTermos.style.top = '0%';
             divTermos.style.opacity = '0';
             divTermos.style.visibility = 'hidden';
+            divTermos.style.transform = "translate(-50%, -10%)"
 
             // inversao de 'clicado'
             clicado = false;
@@ -91,7 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.scale = '0.5';
         } else if (button == buttonTermos2) {
             // caso clique em sim ('nao')
-            location.href = 'Web-sites/combinacao-perfeita.html';
+            switch (buttonClicado) {
+                case 1:    location.href = 'Web-sites/combinacao-perfeita.html';
+                break;
+                case 2:    location.href = 'Web-sites/Menu-Responsivo/menu-responsivo.html';
+            }
         }
     }
 
