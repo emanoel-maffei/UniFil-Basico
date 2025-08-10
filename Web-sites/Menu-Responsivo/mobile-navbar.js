@@ -1,3 +1,4 @@
+// para orientar o usuário
 alert("Redimencione a janela para vizualisar a renponsividade.")
 
 class MobileNavbar {
@@ -57,3 +58,4 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
