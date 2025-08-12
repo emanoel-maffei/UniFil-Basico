@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const webSite001 = document.getElementById('web-site-001');
     const webSite002 = document.getElementById('web-site-002');
     const webSite003 = document.getElementById('web-site-003');
+    const webSite004 = document.getElementById('web-site-004');
     let clicado = false;
     let buttonClicado = null;
     
@@ -29,7 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
             switch (buttonClicado) {
                 case 2: divTermos.style.transform = "translate(-50%, -10%) rotate(180deg)";
                 break;
-                case 3: divTermos.style.transform = "translate(-50%, -10%) rotate(-135deg)"
+                case 3: divTermos.style.transform = "translate(-50%, -10%) rotate(-135deg)";
+                break;
+                case 4: divTermos.style.transform = "translate(-50%, -10%) rotateX(60deg) rotateY(-60deg)";
+                break;
             }
 
             // inversao de 'clicado'
@@ -45,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     webSite003.addEventListener('click', () => {
         SomeButtonClicked(3)
+    });
+    webSite004.addEventListener('click', () => {
+        SomeButtonClicked(4)
     });
 
     borrar.addEventListener('click', () => {
@@ -107,11 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (button == buttonTermos2) {
             // caso clique em sim ('nao')
             switch (buttonClicado) {
-                case 1:    location.href = 'Web-sites/combinacao-perfeita.html';
+                case 1: location.href = 'Web-sites/combinacao-perfeita.html';
                 break;
-                case 2:    location.href = 'Web-sites/Menu-Responsivo/menu-responsivo.html';
+                case 2: location.href = 'Web-sites/Menu-Responsivo/menu-responsivo.html';
                 break;
-                case 3:     location.href = "Web-sites/Variaveis-CSS/variaveisCSS.html"
+                case 3: location.href = "Web-sites/Variaveis-CSS/variaveisCSS.html";
+                break;
+                case 4: location.href = "Web-sites/Animation-on-Scroll-JS/animation-on-scroll.html";
             }
         }
     }
