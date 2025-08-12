@@ -1,0 +1,70 @@
+:root {
+    --font-family: helvetica, ubuntu, roboto, arial, sans-serif;
+    --size: 0.5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    font-family: var(--font-family);
+    height: 100vh;
+
+    padding: 0px;
+
+    margin: 0px;
+
+    user-select: none;
+}
+
+.c-card {
+    /* "_" -> usado para diferenciar variaveis de escopo local de global */
+    --_hue: 180;
+    --_lightness: 35%;
+    --_color: hsl(var(--_hue) 80% var(--_lightness));
+    --_outline-width: calc(var(--size) / 4);
+
+    background-color: white;
+    margin: calc(var(--size) * 2);
+    outline: var(--_outline-width) solid var(--_color);
+    padding: calc(var(--size) * 2);
+    /* cubic-bezier -> curva de aceleração personalizada
+    irmão do linear, ease, ease-in... */
+    /* https://cubic-bezier.com/#.17,.67,.83,.67 */
+    transition: outline 125ms cubic-bezier(0, 0.55, 0.45, 1);
+    /* ch -> unidade de media baseada na largura do caracter "0" da fonte que esta sendo utilizada */
+    width: 35ch;
+}
+
+.c-card:hover {
+    --_outline-width: var(--size);
+}
+
+.c-card__title {
+    color: var(--_color);
+}
+
+.c-card__cta {
+    --_cta-padding: 0.5rem;
+
+    /* redefine todas as propriedades CSS de um elemento para 
+    seus valores iniciais padrão. todas as propriedades herdadas e definidas anteriormente (incluindo estilos padrão do navegador ou de outras regras CSS) são removidas ou redefinidas para o seu estado original. */
+    all: initial;
+    background-color: var(--_color);
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    opacity: 0.85;
+    /* valor-1 -> cima/baixo; valor-2 -> esquerda/direita */
+    padding: var(--_cta-padding) calc(var(--_cta-padding)  * 2);
+    
+
+    border: none;
+
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // captura do botao 
     const webSite001 = document.getElementById('web-site-001');
     const webSite002 = document.getElementById('web-site-002');
+    const webSite003 = document.getElementById('web-site-003');
     let clicado = false;
     let buttonClicado = null;
     
@@ -18,17 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!clicado) {
             // definindo botao clicado
             buttonClicado = button;
-            console.log('Botão Clicado:');
-            console.log(buttonClicado);
-            // borrar tela
+            console.log(`Botão Clicado: ${buttonClicado}`);
             borrar.style.visibility = 'visible';
             borrar.style.opacity = '0.85';
             // aparecer termos
             divTermos.style.visibility = 'visible';
             divTermos.style.opacity = '1';
             divTermos.style.top = '10%';
-            if (buttonClicado == 2) {
-                divTermos.style.transform = "translate(-50%, -10%) rotate(180deg)"
+            switch (buttonClicado) {
+                case 2: divTermos.style.transform = "translate(-50%, -10%) rotate(180deg)";
+                break;
+                case 3: divTermos.style.transform = "translate(-50%, -10%) rotate(-135deg)"
             }
 
             // inversao de 'clicado'
@@ -42,12 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
     webSite002.addEventListener('click', () => {
         SomeButtonClicked(2)
     });
+    webSite003.addEventListener('click', () => {
+        SomeButtonClicked(3)
+    });
 
     borrar.addEventListener('click', () => {
         if (clicado) {
             buttonClicado = null;
-            console.log('Botão Clicado:');
-            console.log(buttonClicado);
+            console.log(`Botão Clicado: ${buttonClicado}`);
             // borrar tela
             borrar.style.opacity = '0';
             borrar.style.visibility = 'hidden';
@@ -107,6 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 1:    location.href = 'Web-sites/combinacao-perfeita.html';
                 break;
                 case 2:    location.href = 'Web-sites/Menu-Responsivo/menu-responsivo.html';
+                break;
+                case 3:     location.href = "Web-sites/Variaveis-CSS/variaveisCSS.html"
             }
         }
     }
