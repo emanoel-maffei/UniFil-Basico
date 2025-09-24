@@ -55,8 +55,8 @@ programa {
           pare
         caso contrario:
           escreva("\n ❌ Valor Inválido!\n")
-          escreva("\n----------------------------------------")
       }
+      escreva("\n----------------------------------------\n")
     }
   }
 }
