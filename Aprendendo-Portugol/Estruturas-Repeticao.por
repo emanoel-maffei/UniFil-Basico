@@ -7,7 +7,7 @@ programa {
       esperar(intervalo)
     }
 
-    para (inteiro i2 = 3; i2 >= 1; i2--) {
+    para (inteiro i = 3; i >= 1; i--) {
       escreva("BOOOOOOM!!!!!!!\n")
     }
   }
