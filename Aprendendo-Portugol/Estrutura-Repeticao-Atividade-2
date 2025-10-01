@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+    /* Enunciado do Exercicio: Monitor de Estabilidade da Nave */
+    inteiro senha = 1234
+    inteiro resposta
+    inteiro tentativaErrada = 0
+
+    faca {
+      /* verificação da quantidade de tentativas */
+      se (tentativaErrada == 3) {
+        pare
+      }
+      escreva("senha: ")
+      leia(resposta)
+      tentativaErrada++
+    } enquanto (resposta != senha)
+
+    se (tentativaErrada == 3) {
+      escreva("⚠ ACESSO BLOQUEADO ⚠")
+    } senao {
+      escreva("ACESSO PERMITIDO")
+    }
+  }
+}
