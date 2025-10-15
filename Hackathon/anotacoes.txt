@@ -25,6 +25,3 @@ Recomendações:
     - Deixar as informações nos slides o mais leves possiveis, e desenvolve-las melhor nas explicações
 
 -----------------------------------------------------------
-
-Ideias (1):
-  Melhorar a Metodologia de Ensino nas Escolas inple VR(Virtual Reality) / AR(Augmented Reality)
