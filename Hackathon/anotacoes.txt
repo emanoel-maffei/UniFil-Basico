@@ -25,3 +25,5 @@ Recomendações:
     - Deixar as informações nos slides o mais leves possiveis, e desenvolve-las melhor nas explicações
 
 -----------------------------------------------------------
+Link desta Anotação Web:
+    https://emanoel-maffei.github.io/UniFil-Basico/Hackathon/anotacoes.txt
