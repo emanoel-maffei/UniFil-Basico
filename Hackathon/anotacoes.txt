@@ -1,5 +1,7 @@
 O que é um "Pitch":
     Um "pitch" é uma apresentação curta e objetiva para vender uma ideia, produto, serviço ou negócio a investidores, clientes ou parceiros
+Tema:
+    COMO MELHORAR A EDUCAÇÃO
 
 Estrutura do Pitch da Hackathon:
     - Capa
