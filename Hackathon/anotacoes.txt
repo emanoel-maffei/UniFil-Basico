@@ -21,13 +21,26 @@ TIpos de ...:
 
 Recomendações:
     - Não apenas ler os slides, mas usa-los apenas para consultas
-    - Deixar as informações nos slides o mais leves possiveis, e desenvolve-las melhor nas explicações
+    - Deixar as informações nos slides o mais leves possiveis, e desenvolve-las melhor nas     
+    explicações
 
 Modelo Canvas:
 
     - Principais Parceiros:
         Parceirias que você acha necessárias
-    - 
+    - Segmento de Clientes:
+        Definição do Perfil do meu cliente
+    - Relacionamento com o Cliente:
+        Onde você vai atingir seu cliente(intagram, facebook, youtube...)
+    - Estrutura de Custos:
+        Todos os gastos necessários para manter seu negócio funcionando
+    - Receitas:
+        Receita gerada pela execução do negócio
+
+Prototipagem:
+    Pode ser Desenho, Digital ou Fisico.
+    É um esboço, um esqueleto, uma representação do produto final 
+
 
 -----------------------------------------------------------
 Link desta Anotação Web:
