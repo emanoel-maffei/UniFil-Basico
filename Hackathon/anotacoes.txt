@@ -11,8 +11,7 @@ Estrutura do Pitch da Hackathon:
     - Competição Equipe
     - Pedido
 
-Resumo da Estrutura:
-
+TIpos de ...:
     - B2B (Business To Business):
         Empresa que vende para uma Empresa
     - B2C (Business To Client):
@@ -23,6 +22,12 @@ Resumo da Estrutura:
 Recomendações:
     - Não apenas ler os slides, mas usa-los apenas para consultas
     - Deixar as informações nos slides o mais leves possiveis, e desenvolve-las melhor nas explicações
+
+Modelo Canvas:
+
+    - Principais Parceiros:
+        Parceirias que você acha necessárias
+    - 
 
 -----------------------------------------------------------
 Link desta Anotação Web:
