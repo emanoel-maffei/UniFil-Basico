@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
                 case 4: divTermos.style.transform = "translate(-50%, -10%) rotateX(60deg) rotateY(-60deg)";
                 break;
-                case 5: divTermos.style.transform = "translate(-50%, -10%) rotateX(-60deg) rotateY(60deg)";
-                        divTermos.style.filter = "saturate(300%)";
+                case 5: divTermos.style.transform = "translate(-50%, -10%) rotateX(80deg) rotateY(-80deg)";
+                        divTermos.style.filter = "invert(100%)";
                 break;
             }
 
@@ -145,3 +145,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 })
+
