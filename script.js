@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const oButton = document.getElementById("o-button");
+
+    oButton.addEventListener("click", () => {
+        document.body.stylefilter = "invert(100%)";
+    })
+
     /* vai ser executado logo em seguida do carregamendo completo da pagina */
     
     // captura do botao 
@@ -145,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 })
+
 
 
 
