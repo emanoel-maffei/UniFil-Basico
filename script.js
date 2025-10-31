@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const oButton = document.getElementById("o-button");
 
+    oButton.addEventListener("mouseenter", () => {
+        oButton.style.filter = "invert(100%)";
+    })
+
     oButton.addEventListener("click", () => {
         document.body.stylefilter = "invert(100%)";
     })
@@ -151,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 })
+
 
 
 
