@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const oButton = document.getElementById("o-button");
-    oButton.style.transition = "1s";
-
-    oButton.addEventListener("mouseenter", () => {
-        oButton.style.filter = "invert(100%)";
-    })
-    
-    oButton.addEventListener("mouseout", () => {
-        oButton.style.filter = "invert(0%)";
-    })
-
-    oButton.addEventListener("click", () => {
-        document.body.style.filter = "invert(100%)";
-    })
-
     /* vai ser executado logo em seguida do carregamendo completo da pagina */
     
     // captura do botao 
@@ -160,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 })
+
 
 
 
