@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
             divTermos.style.top = '10%';
             switch (buttonClicado) {
                 case 2: divTermos.style.transform = "translate(-50%, -10%) rotate(180deg)";
-                break;
+                    break;
                 case 3: divTermos.style.transform = "translate(-50%, -10%) rotate(-135deg)";
-                break;
+                    break;
                 case 4: divTermos.style.transform = "translate(-50%, -10%) rotateX(60deg) rotateY(-60deg)";
-                break;
+                    break;
                 case 5: divTermos.style.transform = "translate(-50%, -10%) rotateX(80deg) rotateY(-80deg)";
                         divTermos.style.filter = "invert(100%)";
                 break;
@@ -145,4 +145,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 })
+
 
