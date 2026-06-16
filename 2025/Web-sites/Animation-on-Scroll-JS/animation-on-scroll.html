@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Animation On Scroll?</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hidden">
+        <h2>Animation on scroll com JS</h2>
+        <p>
+            Animation on scroll (Animação ao rolar) em JavaScript é uma técnica poderosa para criar uma experiência de usuário mais dinâmica e envolvente. Ela consiste em disparar animações CSS em elementos HTML apenas quando eles entram na área visível da tela do navegador.
+        </p>
+    </section>
+
+    <section class="hidden">
+        <h2>Meu Estudo:</h2>
+        <p>
+            Estudei sobre Animation On Scroll com JavaScript e descobri que realizar estas animações ao rolar nem erá tão dificil quanto pensava ao ver o código pela primeira vez, analisalisei o código e entendi aos poucos cada etapa do processo e seu motivo. 
+        </p>
+    </section>
+
+    <section class="hidden">
+        <img id="logo-n1" style="height: 250px;" src="https://nocodestartup.io/wp-content/uploads/2023/09/aprender-a-programar.png" alt="">
+    </section>
+
+    <section class="hidden">
+        <h2>Código Nescessário</h2>
+
+        <pre class="code">
+const myObserver = new IntersectionObserve((entradas) => {
+    console.log(entradas)
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            entrada.target.classList.remove('hidden');
+            entrada.target.classList.add('show');
+        } else {
+            entrada.target.classList.remove('show');
+            entrada.target.classList.add('hidden');
+        }
+    })
+})
+
+const elements = document.querySelectorAll('.hidden');
+
+elements.forEach((element) => myObserver.observe(element));
+        </pre>
+    </section>
+
+    <section class="hidden logos">
+        <img src="img/dev-1.webp" alt="Dev 1" class="avatar">
+        <img src="img/dev-2.webp" alt="Dev 2" class="avatar">
+        <img src="img/dev-3.webp" alt="Dev 3" class="avatar">
+        <img src="img/dev-4.webp" alt="Dev 4" class="avatar">
+        <img src="img/dev-5.webp" alt="Dev 5" class="avatar">
+        <img src="img/dev-6.jpg" alt="Dev 6" class="avatar">
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

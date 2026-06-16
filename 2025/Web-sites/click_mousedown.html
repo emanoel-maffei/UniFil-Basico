@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: black;
+            width: 100dvw;
+            height: 100dvh;
+        }
+
+        input[type="button"] {
+            font-size: 5vw;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            min-width: 30vw;
+            box-shadow: 0px 0px 50px hsla(0, 0%, 100%, .2);
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+            transition-duration: 500ms;
+
+            &:hover {
+                transform: scale(1.2);
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0px 0px 100px hsla(0, 0%, 100%, .5);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="button" value="click" id="button-1">
+    <input type="button" value="mousedown" id="button-2">
+    
+    <script>
+
+        const button_1 = document.getElementById("button-1")
+        let button_1_active = false;
+        const button_2 = document.getElementById("button-2")
+        let button_2_active = false;
+
+        button_1.addEventListener("click", function () {
+            if (button_1_active) {
+                this.style.opacity = "1";
+            } else {
+                this.style.opacity = "0.2";
+            }
+            button_1_active = !button_1_active
+        })
+        
+        button_2.addEventListener("mousedown", function () {
+            if (button_2_active) {
+                this.style.opacity = "1";
+            } else {
+                this.style.opacity = "0.2";
+            }
+            button_2_active = !button_2_active
+        })
+
+    </script>
+
+</body>
+</html>
