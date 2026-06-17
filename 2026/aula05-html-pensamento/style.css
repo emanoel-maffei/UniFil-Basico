@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.me-img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    width: 200px;
+
+    border: solid 0px gray;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 16px;
+}
