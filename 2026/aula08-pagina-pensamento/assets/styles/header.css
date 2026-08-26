@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    min-height: 10vh;
+
+    padding: 0 32px;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+header a {
+    font-weight: bold;
+    color: var(--light-color);
+    text-decoration: none;
+}
+
