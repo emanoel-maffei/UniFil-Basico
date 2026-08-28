@@ -1,0 +1,57 @@
+main {
+    background-color: var(--background-color);
+    min-height: 90vh;
+    height: 90vh;
+}
+
+main nav {
+    height: 100%;
+}
+
+main nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    height: 100%;
+
+    list-style: none;
+
+    padding: 16px;
+}
+
+main nav li {
+    display: inline-block;
+
+    background-color: var(--background-color);
+    height: calc(20px + 24px);
+    width: calc(36px + 24px);
+    text-align: center;
+
+    border: solid 1px var(--black-color);
+    border-radius: 8px;
+
+    transition: 125ms;
+}
+
+main nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--dark-text-color);
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+
+    transition: 125ms;
+}
+
+main nav li:has(:where(a:focus, a:hover)) {
+    background-color: var(--black-color);
+}
+
+main nav li :where(a:focus, a:hover) {
+    color: var(--light-text-color);
+}

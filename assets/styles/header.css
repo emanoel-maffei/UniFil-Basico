@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: var(--black-color);
+    color: var(--light-text-color);
+    height: 10vh;
+
+    padding-left: 32px;
+}
+
+header h1 {
+    font-weight: normal;
+}
