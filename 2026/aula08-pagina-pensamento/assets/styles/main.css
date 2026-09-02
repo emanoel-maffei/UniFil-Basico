@@ -69,12 +69,17 @@ main .catalogo .produto:hover {
     transform: scale(1.01);
 }
 
+main .catalogo .produto img {
+    height: 200px;
+}
+
 main .catalogo .produto h3 {
     font-weight: bolder;
 }
 
-main .catalogo .produto img {
-    height: 200px;
+main .catalogo .produto .preco {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 main .catalogo .produto button {
