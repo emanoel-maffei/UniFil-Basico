@@ -29,3 +29,8 @@ button {
 button {
     cursor: pointer;
 }
+
+button,
+img {
+    user-select: none;
+}

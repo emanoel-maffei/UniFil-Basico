@@ -12,6 +12,8 @@ header {
 
 header h1 {
     text-transform: uppercase;
+    
+    cursor: default;
 }
 
 header nav {
